@@ -15,7 +15,7 @@ Task 1.2에서 Task Description에 따라 샘플 코드를 다음과 같이 수�
 수행내역은 task1.2.txt에 있으며 코드를 실행하면 스푸핑된 ICMP에코 요청이 생성되었습니다.(task1.2.txt,task1.2.py)
  
 ## Task 1.3: Traceroute
- Task Description에 따라 샘플 코드를 수정하여 실행했습니다. Wireshark를 이용하여 주고받은 패킷을 확인 할 수 있었습니다.(treaceroute.txt)
+ Task Description에 따라 샘플 코드를 수정하여 실행했습니다. Wireshark를 이용하여 주고받은 패킷을 확인 할 수 있었습니다.(task1.3.txt)
 
 ## Task 1.4: Sniffing and-then Spoofing
 -  두개의 VM을 만들었고 ICMP 패킷을 스니핑하고 ICMP 에코 회신이 생성되어 전송되었습니다. (task1.4.txt)
