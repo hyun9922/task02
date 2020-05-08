@@ -7,7 +7,12 @@
 #include <netinet/ip.h>
 #include <stdlib.h>
 
-
+struct udpheader {
+	u_int16_t udp_sport;
+	u_int16_t udp_dport;
+	u_int16_t udp_ulen;
+	u_int16_t udp_sum;
+};
 struct ipheader {
 	unsigned char iph_ihl:4, iph_ver:4;
 	unsigned char iph_tos;
@@ -25,8 +30,7 @@ void send_raw_ip_packet (struct ipheader *ip) {
 	int sd;
 	int enable = 1;
 	struct sockaddr_in sin;
-	/* Create a raw socket with IP protocol. The IPPROTO_RAW parameter tells the sytem that the IP header is already included;
-	* this prevents the OS from adding another IP header. */
+	
 	sd = socket(AF_INET, SOCK_RAW, IPPROTO_RAW);
 	if(sd < 0) {
 		perror("socket() error"); exit(-1);
@@ -61,7 +65,7 @@ int main() {
 	ip->iph_ver = 4;
 	ip->iph_ihl = 5;
 	ip->iph_ttl = 20;
-	ip->iph_sourceip.s_addr = inet_addr("10.0.2.1");
+	ip->iph_sourceip.s_addr = inet_addr("10.0.2.2");
 	ip->iph_destip.s_addr = inet_addr("10.0.2.6");
 	ip->iph_protocol = IPPROTO_UDP;
 	ip->iph_len=htons(sizeof(struct ipheader)+sizeof(struct udpheader) + data_len);

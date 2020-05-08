@@ -9,7 +9,7 @@ while(True):
 	b = ICMP()
 	p = a/b
        
-	#reply = sr(p)
-	#print("IP: ", reply[IP].src)
-	#if (reply[IP].src == "1.2.3.4"):
+	reply = sr(p)
+	print("IP: ", reply[IP].src)
+	if (reply[IP].src == "1.2.3.4"):
 	
