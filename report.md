@@ -6,7 +6,7 @@
  - **Name**: Jihyun Lee
  - **GitHub ID**: hyun9922
 
-## Task 1.1: Sniffing Packets(B)
+## Task 1.1: Sniffing Packets
 
 Task 1.1A(output.txt)과 Task 1.1B(output2.txt)을 수행했으며, 수행 내역은 Terminal Dump에 있습니다. 
 
@@ -24,20 +24,20 @@ Task 1.2에서 Task Description에 따라 샘플 코드를 다음과 같이 수�
  - Task 2.1A는 <https://github.com/kevin-w-du/BookCode/tree/master/Sniffing_Spoofing>에 공개된 코드를 이용해 실험을 했으며, 
    수행내역은 Terminal Dump에 있습니다.(task2.c, task2.1.txt)
 
- * **Question 1**. Please use your own words to describe the sequence of the library calls that are essential
+  **Question 1**. Please use your own words to describe the sequence of the library calls that are essential
 for sniffer programs. This is meant to be a summary, not detailed explanation like the one in the
 tutorial or book.
  - Answer: pcap세션을 열고 나서 pcap_compile()으로 필터를 컴파일하고 ,pcap_setfilter()으로 컴파일된 필터가 적용 후 
  pcap_close()를 사용하여 pcap 세션을 닫아야 합니다.
 
- * **Question 2**. Why do you need the root privilege to run a sniffer program? Where does the program
+  **Question 2**. Why do you need the root privilege to run a sniffer program? Where does the program
 fail if it is executed without the root privilege?
 
  - Answer: 스니퍼 프로그램을 실행할 때 루트 권한이 없으면 실행 프로그램에 오류가 발생하는데, 프로그램이 엑세스하는 동안 발생하는 것 입니다.
            스니퍼 프로그램은 네트워크 인터페이스 카드에 접속해야하기 때문에 루트 권한이 필요합니다.
  
 
- * **Question 3**. Please turn on and turn off the promiscuous mode in your sniffer program. Can you
+  **Question 3**. Please turn on and turn off the promiscuous mode in your sniffer program. Can you
 demonstrate the difference when this mode is on and off? Please describe how you can demonstrate
 this.
 (못함)
@@ -55,9 +55,9 @@ this.
 
 ## Task 2.2:Spoofing
 
-## Task 2.2A:Write a spoofing program
+- Task 2.2A:Write a spoofing program
 
-## Task 2.2B:Spoof an ICMP Echo Request
+- Task 2.2B:Spoof an ICMP Echo Request
 
 * **Question 4**. Can you set the IP packet length ﬁeld to an arbitrary value, regardless of how big the actual packet is? 
 
