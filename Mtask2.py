@@ -1,6 +1,6 @@
 #!usr/bin/python3
 from scapy.all import *
-import sys
+
 
 X_terminal_IP = "10.0.2.6"
 X_terminal_Port = 514
