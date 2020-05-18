@@ -1,7 +1,6 @@
 
 #!usr/bin/python3
 from scapy.all import *
-import sys
 
 print("Sending Spoofed SYN Packet")
 IPLayer = IP(src="10.0.2.15", dst="10.0.2.6")
