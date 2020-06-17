@@ -1,0 +1,33 @@
+Script started on Wed 17 Jun 2020 04:31:13 AM EDT
+[06/17/20]seed@VM:~$ ifconfig -a
+enp0s3    Link encap:Ethernet  HWaddr 08:00:27:74:87:ea  
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0
+          inet6 addr: fe80::9d7e:fc11:e093:d248/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:56 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:124 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:9111 (9.1 KB)  TX bytes:14514 (14.5 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:219 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:219 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:30997 (30.9 KB)  TX bytes:30997 (30.9 KB)
+
+tun0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          inet addr:192.168.53.5  P-t-P:192.168.53.5  Mask:255.255.255.0
+          inet6 addr: fe80::ae67:f418:bc3a:ffa0/64 Scope:Link
+          UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:500 
+          RX bytes:0 (0.0 B)  TX bytes:144 (144.0 B)
+
+[06/17/20]seed@VM:~$ exit
+exit
+
+Script done on Wed 17 Jun 2020 04:31:22 AM EDT
